@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from "react-hook-form";
 import { Button, TextField, Typography, Grid } from '@material-ui/core';
-import LineGradient from './LineGradient';
 
 const ContactForm = () => {
   const {
