@@ -4,21 +4,22 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles(() => ({
-    date: {
-        fontSize: '10px',
-        padding: '0vh 0rem 0vh 5vh',
-        fontWeight: 'bold'
-    },
     title: {
         fontSize: '25px',
         padding: '0vh 0rem 0vh 5vh',
         fontWeight: 'bold',
         backgroundColor: 'white'
     },
+    date: {
+        fontSize: '15px',
+        padding: '0vh 0rem 0vh 5vh',
+        fontWeight: 'bold',
+        marginTop:'0.25rem'
+    },
     description: {
-        padding: '0.375rem 0.75rem',
         display: 'inline-block',
-        textAlign: 'left',
+        marginLeft: '5vh',
+        marginTop: '3vh'
     },
 }));
 
@@ -34,7 +35,7 @@ const PostThree = () => {
                 <Box>
                     <Box className={classes.date}>05-22-23</Box>
                 </Box>
-                <Box>
+                <Box className={classes.description}>
                     Day 3 ready
                 </Box>
             </Box>

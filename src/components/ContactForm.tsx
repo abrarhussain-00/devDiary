@@ -87,6 +87,13 @@ const ContactForm = () => {
               <img className={classes.image} src="../assets/contact-image.jpeg" alt="contact" />
             </motion.div>
           </Grid>
+          <div
+            style={{
+              width: '1px',
+              height: '25rem',
+              backgroundColor: 'black',
+            }}
+          ></div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -120,6 +127,8 @@ const ContactForm = () => {
                       : 'Max length is 100 characters.'
                     : ''
                 }
+                style={{ marginTop: '3vh', width: '75%', marginLeft: '5vh' }}
+
               />
               <TextField
                 fullWidth
@@ -137,7 +146,7 @@ const ContactForm = () => {
                       : 'Please enter a valid email address.'
                     : ''
                 }
-                style={{ marginTop: '3vh' }}
+                style={{ marginTop: '3vh', width: '75%', marginLeft: '5vh' }}
               />
               <TextField
                 fullWidth
@@ -157,7 +166,7 @@ const ContactForm = () => {
                       : 'Max length is 2000 characters.'
                     : ''
                 }
-                style={{ marginTop: '3vh' }}
+                style={{ marginTop: '3vh', width: '75%', marginLeft: '5vh' }}
               />
               <div className="flex">
                 <Button
@@ -167,17 +176,13 @@ const ContactForm = () => {
                     fontWeight: 'bold',
                     marginTop: '3vh',
                     display: 'flex',
+                    backgroundColor: "black",
+                    marginLeft: '5vh',
                     alignItems: 'center',
                   }}
                   type="submit"
                 >
-                  <span style={{ marginRight: '10px', color: 'black' }}>SUBMIT FORM</span>
-                  <img
-                    width="24"
-                    height="24"
-                    src="https://img.icons8.com/material-sharp/24/filled-sent.png"
-                    alt="filled-sent"
-                  />
+                  <span style={{ color: 'white' }}>SUBMIT FORM</span>
                 </Button>
               </div>
             </form>

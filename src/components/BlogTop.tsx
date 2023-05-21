@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Box, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import Title from './Title';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -31,12 +32,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '9999px',
     padding: '0.375rem 0.75rem',
     fontWeight: 'bold',
-    backgroundColor:'white'
+    backgroundColor: 'white'
   },
   description: {
     padding: '0.375rem 0.75rem',
     display: 'inline-block',
-    textAlign: 'left', 
+    textAlign: 'left',
   },
   gridContainer: {
     display: 'grid',
@@ -58,43 +59,48 @@ const BlogTop = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.gridContainer}>
-      <Box className={classes.container}>
-        <Box className={classes.tagContainer}>
-          <Box className={classes.title}>My First Post!</Box>
-        </Box>
-        <Box className={classes.description}>
+    <Box>
+      <Title />
+      <Typography variant='h5' style={{marginTop:'0.75rem', marginLeft:'5vh'}}>***Last three posts 📝:</Typography>
+      <Box className={classes.gridContainer}>
+        <Box className={classes.container}>
+          <Box className={classes.tagContainer}>
+            <Box className={classes.title}>My First Post!</Box>
+          </Box>
+          <Box className={classes.description}>
             Join me on my first ever blog post! The tech markets is lower than it has ever been. Let's use this time to sharpen our skills
             and be better applicants! I will be blogging everyday and if you dont see one up for a certain day, be sure to contact me to
             hold me accountable. Join me on my journey!
+          </Box>
+          <a href='/day1'>Day 1</a>
         </Box>
-        <a href='/day1'>Day 1</a>
-      </Box>
 
-      <Box className={classes.container}>
-        <Box className={classes.tagContainer}>
-          <Box className={classes.title}>Getting adjusted</Box>
+        <Box className={classes.container}>
+          <Box className={classes.tagContainer}>
+            <Box className={classes.title}>Getting adjusted</Box>
+          </Box>
+          <Box className={classes.description}>
+            Living broke? You're not alone. Read up on how I keep myself motivated! And as always, we will talk about project, do a leetcode problem
+            and end off! Remember, leetcode a day drives umemployment aways!
+          </Box>
+          <a href='/day2'>Day 2</a>
         </Box>
-        <Box className={classes.description}>
-          Living broke? You're not alone. Read up on how I keep myself motivated! And as always, we will talk about project, do a leetcode problem
-          and end off! Remember, leetcode a day drives umemployment aways!
-        </Box>
-        <a href='/day2'>Day 2</a>
-      </Box>
 
-      <Box className={classes.container}>
-        <Box className={classes.tagContainer}>
-          <Box className={classes.title}>Keeping my head up</Box>
-        </Box>
-        <Box className={classes.description}>
-        <Box className={classes.description}>
-        Why is it hard to have hope and so easy to lose it? Read up on how I try to stay desciplined with my projects. Don't feel like doing leetcode?
-        I have not been working on it either till I started the blog. As you may have seen, we are starting the from very top so chin up!
-        </Box>
-        <a href='/day3'>Day 3</a>
+        <Box className={classes.container}>
+          <Box className={classes.tagContainer}>
+            <Box className={classes.title}>Keeping my head up</Box>
+          </Box>
+          <Box className={classes.description}>
+            <Box className={classes.description}>
+              Why is it hard to have hope and so easy to lose it? Read up on how I try to stay desciplined with my projects. Don't feel like doing leetcode?
+              I have not been working on it either till I started the blog. As you may have seen, we are starting the from very top so chin up!
+            </Box>
+            <a href='/day3'>Day 3</a>
+          </Box>
         </Box>
       </Box>
     </Box>
+
   );
 };
 

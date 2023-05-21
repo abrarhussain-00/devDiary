@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Title from './components/Title';
-import Home from './views/Home';
 import Blog from './views/Blog';
 import Contact from './views/Contact';
 import BlogTop from './components/BlogTop';
@@ -16,7 +14,6 @@ function App() {
     <Router>
       <div className="App" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <NavBar />
-        <Title />
         <Routes>
           <Route path="/" element={<BlogTop />} />
           <Route path="/blogs" element={<Blog />} />
