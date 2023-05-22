@@ -9,8 +9,13 @@ const Blog = () => {
   return (
     <div>
       <Title/>
+      <br/><br/>
+      <b style={{marginLeft:'5vh'}}>Sorted by newest to oldest!</b>
+
       {/* <PostThree/>
+      <div style={{marginLeft:'5vh', marginRight:'5vh'}}>
       <LineGradient/>
+      </div>
       <PostTwo/> */}
       <div style={{marginLeft:'5vh', marginRight:'5vh'}}>
         <LineGradient/>

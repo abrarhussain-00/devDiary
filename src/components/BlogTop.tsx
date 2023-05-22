@@ -61,14 +61,14 @@ const BlogTop = () => {
   return (
     <Box>
       <Title />
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
         <img
           src="https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=612x612&w=0&k=20&c=ijjq-DLNxIaPuGvIX8k06IZxMAjGpyJeboaV_byCX9k="
           alt="pic"
           width='40%'
           style={{ justifyContent: 'center' }}
         />
-      </div>
+      </div> */}
       <Typography variant='h5' style={{ marginTop: '0.75rem', marginLeft: '5vh' }}>***Lastest three posts 📝:</Typography>
 
       <Box className={classes.gridContainer}>
@@ -86,15 +86,20 @@ const BlogTop = () => {
           </div>
         </Box>
 
-        {/* <Box className={classes.container}>
+        <Box className={classes.container}>
           <Box className={classes.tagContainer}>
             <Box className={classes.title}>Getting adjusted</Box>
           </Box>
           <Box className={classes.description}>
-            Living broke? You're not alone. Read up on how I keep myself motivated! And as always, we will talk about project, do a leetcode problem
-            and end off! Remember, leetcode a day drives umemployment aways!
+            {/* Living broke? You're not alone. Read up on how I keep myself motivated! And as always, we will talk about project, do a leetcode problem
+            and end off! Remember, leetcode a day drives umemployment aways! */}
+            Stay tuned for Day 2! Contact me <a href='/contact'>here</a> if you have some topics
+            you want me to address! Feel free to give me suggestions to make this better! Again, 
+            thanks for tuning in! And I'll see you tomorrow!
           </Box>
-          <a href='/day2'>Day 2</a>
+          <div style={{textAlign:'center'}}>
+            <a href='/day2'>Day 2</a>
+          </div>
         </Box>
 
         <Box className={classes.container}>
@@ -103,12 +108,15 @@ const BlogTop = () => {
           </Box>
           <Box className={classes.description}>
             <Box className={classes.description}>
-              Why is it hard to have hope and so easy to lose it? Read up on how I try to stay desciplined with my projects. Don't feel like doing leetcode?
-              I have not been working on it either till I started the blog. As you may have seen, we are starting the from very top so chin up!
+            Stay tuned for Day 3! Contact me <a href='/contact'>here</a> if you have some topics
+            you want me to address! Feel free to give me suggestions to make this better! Again, 
+            thanks for tuning in! And I'll see you tomorrow!
             </Box>
+          <div style={{textAlign:'center'}}>
             <a href='/day3'>Day 3</a>
+          </div>
           </Box>
-        </Box> */}
+        </Box>
       </Box>
     </Box>
 
