@@ -25,11 +25,11 @@ const NavBar: React.FC = () => {
   return (
     <nav
       style={{
-        backgroundColor: 'black',
+        backgroundColor: 'white',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '15px',
+        padding: '5px',
         color: 'white',
         marginBottom: '7vh',
         fontSize: '20px', 
@@ -39,45 +39,48 @@ const NavBar: React.FC = () => {
       <div style={{ display: 'flex', alignItems: 'center', marginLeft: 'auto' }}>
         {isMobileView && (
           <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            width: '30px',
+            height: '24px',
+            cursor: 'pointer',
+            zIndex: 1,
+          }}
+          onClick={handleMenuClick}
+        >
+          <div
             style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              width: '25px',
-              height: '20px',
-              cursor: 'pointer',
-              zIndex: 1,
+              width: '100%',
+              height: '4px',
+              backgroundColor: 'black',
+              transition: 'transform 0.3s, opacity 0.3s',
+              transformOrigin: 'center',
+              transform: isMenuOpen ? 'rotate(45deg) translate(0, 7px)' : 'none',
             }}
-            onClick={handleMenuClick}
-          >
-            <div
-              style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: 'white',
-                transition: 'background-color 0.3s',
-                transform: `${isMenuOpen ? 'rotate(45deg) translate(0, 5px)' : 'none'}`,
-              }}
-            ></div>
-            <div
-              style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: 'white',
-                transition: 'opacity 0.3s',
-                opacity: `${isMenuOpen ? '0' : '1'}`,
-              }}
-            ></div>
-            <div
-              style={{
-                width: '100%',
-                height: '2px',
-                backgroundColor: 'white',
-                transition: 'background-color 0.3s',
-                transform: `${isMenuOpen ? 'rotate(-45deg) translate(0, -5px)' : 'none'}`,
-              }}
-            ></div>
-          </div>
+          ></div>
+          <div
+            style={{
+              width: '100%',
+              height: '4px',
+              backgroundColor: 'black',
+              transition: 'opacity 0.3s',
+              opacity: isMenuOpen ? '0' : '1',
+            }}
+          ></div>
+          <div
+            style={{
+              width: '100%',
+              height: '4px',
+              backgroundColor: 'black',
+              transition: 'transform 0.3s, opacity 0.3s',
+              transformOrigin: 'center',
+              transform: isMenuOpen ? 'rotate(-45deg) translate(0, -7px)' : 'none',
+            }}
+          ></div>
+        </div>
+        
         )}
         {isMobileView ? (
           isMenuOpen && (
@@ -85,16 +88,18 @@ const NavBar: React.FC = () => {
               <a
                 href="/"
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textAlign: 'left',
                   textDecoration: 'none',
-                  fontSize: '23px', 
+                  fontSize: '15px', 
+                  fontWeight: '600',
+
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'lightBlue';
+                  e.currentTarget.style.color = 'navy';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.color = 'black';
                 }}
               >
                 Home
@@ -102,16 +107,18 @@ const NavBar: React.FC = () => {
               <a
                 href="/blogs"
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textAlign: 'left',
                   textDecoration: 'none',
-                  fontSize: '23px', 
+                  fontSize: '15px',
+                  fontWeight: '600',
+ 
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'lightBlue';
+                  e.currentTarget.style.color = 'blue';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.color = 'black';
                 }}
               >
                 Blog
@@ -119,20 +126,41 @@ const NavBar: React.FC = () => {
               <a
                 href="/contact"
                 style={{
-                  color: 'white',
+                  color: 'black',
                   textAlign: 'left',
                   textDecoration: 'none',
-                  fontSize: '23px', 
+                  fontSize: '15px',
+                  fontWeight: '600',
+
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'lightBlue';
+                  e.currentTarget.style.color = 'navy';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'white';
+                  e.currentTarget.style.color = 'black';
                 }}
               >
                 Contact
               </a>
+              <a
+                href="https://www.abrardev.com/"
+                style={{
+                  color: 'black',
+                  textAlign: 'left',
+                  textDecoration: 'none',
+                  fontSize: '15px',
+                  fontWeight: '600',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'navy';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'black';
+                }}
+              >
+                Portfolio
+              </a>
+              
               <SocialMediaIcons />
             </div>
           )
@@ -141,15 +169,19 @@ const NavBar: React.FC = () => {
             <a
               href="/"
               style={{
-                color: 'white',
+                color: 'black',
                 marginRight: '10px',
                 textDecoration: 'none',
+                fontWeight: '300',
+                fontFamily: 'Verdana',
+                fontSize: '14px',
+
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = 'lightBlue';
+                e.currentTarget.style.color = 'navy';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.color = 'black';
               }}
             >
               Home
@@ -157,15 +189,20 @@ const NavBar: React.FC = () => {
             <a
               href="/blogs"
               style={{
-                color: 'white',
+                color: 'black',
                 marginRight: '10px',
                 textDecoration: 'none',
+                fontWeight: '300',
+                fontFamily: 'Verdana',
+                fontSize: '14px',
+
+
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = 'lightBlue';
+                e.currentTarget.style.color = 'navy';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.color = 'black';
               }}
             >
               Blogs
@@ -173,19 +210,48 @@ const NavBar: React.FC = () => {
             <a
               href="/contact"
               style={{
-                color: 'white',
+                color: 'black',
+                marginRight: '10px',
                 textDecoration: 'none',
+                fontWeight: '300',
+                fontFamily: 'Verdana',
+                fontSize: '14px',
+
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.color = 'lightBlue';
+                e.currentTarget.style.color = 'navy';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.color = 'white';
+                e.currentTarget.style.color = 'black';
               }}
             >
               Contact
             </a>
-            <SocialMediaIcons />
+
+            <a
+              href="https://www.abrardev.com/"
+              style={{
+                color: 'black',
+                textDecoration: 'none',
+                fontWeight: '300',
+                fontFamily: 'Verdana',
+                fontSize: '14px',
+
+
+
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'navy';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'black';
+              }}
+            >
+              Portfolio
+            </a>
+            <div style={{marginRight:'20px'}}>
+              <SocialMediaIcons />
+            </div>
           </>
         )}
       </div>

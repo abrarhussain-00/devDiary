@@ -3,15 +3,15 @@ import { Stack, Typography } from '@mui/material';
 
 const Title = () => {
   return (
-    <div style={{ textAlign: 'left', marginLeft:'5vh' }}>
+    <div style={{ textAlign: 'center', margin:'0 auto'}}>
       <Stack>
-        <Typography variant="h3" style={{ color: '', fontWeight: 'bold' }}>
+        <Typography variant="h4" component='h1' style={{ color: '', fontWeight: 'bold' }}>
           Tech Tenacity
         </Typography>
         <Typography variant="h5" style={{}}>
           Blogging Daily on the Path to Employment
         </Typography>
-        <Typography>By Abrar Hussain</Typography>
+        <Typography style={{marginBottom:'10px'}}>By: Abrar Hussain</Typography>
       </Stack>
     </div>
   );

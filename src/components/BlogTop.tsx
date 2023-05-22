@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, Typography, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Title from './Title';
+import LineGradient from './LineGradient';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -14,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '352px',
     margin: 'auto',
     cursor: 'pointer',
+    marginTop: '27px',
     transition: 'box-shadow 0.3s ease-in-out',
     '&:hover': {
       boxShadow: '0px 6px 24px rgba(0, 0, 0, 0.2)',
@@ -24,11 +26,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
   },
   tagContainer: {
-    marginBottom: '1rem',
     display: 'flex',
   },
   title: {
-    fontSize: '25px',
+    fontSize: '18px',
     borderRadius: '9999px',
     padding: '0.375rem 0.75rem',
     fontWeight: 'bold',
@@ -69,7 +70,8 @@ const BlogTop = () => {
           style={{ justifyContent: 'center' }}
         />
       </div> */}
-      <Typography variant='h5' style={{ marginTop: '0.75rem', marginLeft: '5vh' }}>***Lastest three posts 📝:</Typography>
+
+      <hr style={{ width: '50%' }} />
 
       <Box className={classes.gridContainer}>
         <Box className={classes.container}>
@@ -81,7 +83,7 @@ const BlogTop = () => {
             and be better applicants! I will be blogging everyday and if you dont see one up for a certain day, be sure to contact me to
             hold me accountable. Join me on my journey!
           </Box>
-          <div style={{textAlign:'center'}}>
+          <div style={{ textAlign: 'center', marginTop:'7px' }}>
             <a href='/day1'>Day 1</a>
           </div>
         </Box>
@@ -94,10 +96,10 @@ const BlogTop = () => {
             {/* Living broke? You're not alone. Read up on how I keep myself motivated! And as always, we will talk about project, do a leetcode problem
             and end off! Remember, leetcode a day drives umemployment aways! */}
             Stay tuned for Day 2! Contact me <a href='/contact'>here</a> if you have some topics
-            you want me to address! Feel free to give me suggestions to make this better! Again, 
+            you want me to address! Feel free to give me suggestions to make this better! Again,
             thanks for tuning in! And I'll see you tomorrow!
           </Box>
-          <div style={{textAlign:'center'}}>
+          <div style={{ textAlign: 'center', marginTop:'7px' }}>
             <a href='/day2'>Day 2</a>
           </div>
         </Box>
@@ -108,13 +110,13 @@ const BlogTop = () => {
           </Box>
           <Box className={classes.description}>
             <Box className={classes.description}>
-            Stay tuned for Day 3! Contact me <a href='/contact'>here</a> if you have some topics
-            you want me to address! Feel free to give me suggestions to make this better! Again, 
-            thanks for tuning in! And I'll see you tomorrow!
+              Stay tuned for Day 3! Contact me <a href='/contact'>here</a> if you have some topics
+              you want me to address! Feel free to give me suggestions to make this better! Again,
+              thanks for tuning in! And I'll see you tomorrow!
             </Box>
-          <div style={{textAlign:'center'}}>
-            <a href='/day3'>Day 3</a>
-          </div>
+            <div style={{ textAlign: 'center', marginTop:'7px' }}>
+              <a href='/day3'>Day 3</a>
+            </div>
           </Box>
         </Box>
       </Box>
