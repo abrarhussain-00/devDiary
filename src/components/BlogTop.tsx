@@ -81,7 +81,9 @@ const BlogTop = () => {
             and be better applicants! I will be blogging everyday and if you dont see one up for a certain day, be sure to contact me to
             hold me accountable. Join me on my journey!
           </Box>
-          <a href='/day1'>Day 1</a>
+          <div style={{textAlign:'center'}}>
+            <a href='/day1'>Day 1</a>
+          </div>
         </Box>
 
         {/* <Box className={classes.container}>
