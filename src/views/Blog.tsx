@@ -9,10 +9,12 @@ const Blog = () => {
   return (
     <div>
       <Title/>
-      <PostThree/>
+      {/* <PostThree/>
       <LineGradient/>
-      <PostTwo/>
-      <LineGradient/>
+      <PostTwo/> */}
+      <div style={{marginLeft:'5vh', marginRight:'5vh'}}>
+        <LineGradient/>
+      </div>
       <PostOne/>
     </div>
   )

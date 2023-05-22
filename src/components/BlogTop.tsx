@@ -61,7 +61,16 @@ const BlogTop = () => {
   return (
     <Box>
       <Title />
-      <Typography variant='h5' style={{marginTop:'0.75rem', marginLeft:'5vh'}}>***Last three posts 📝:</Typography>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img
+          src="https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=612x612&w=0&k=20&c=ijjq-DLNxIaPuGvIX8k06IZxMAjGpyJeboaV_byCX9k="
+          alt="pic"
+          width='40%'
+          style={{ justifyContent: 'center' }}
+        />
+      </div>
+      <Typography variant='h5' style={{ marginTop: '0.75rem', marginLeft: '5vh' }}>***Lastest three posts 📝:</Typography>
+
       <Box className={classes.gridContainer}>
         <Box className={classes.container}>
           <Box className={classes.tagContainer}>
@@ -75,7 +84,7 @@ const BlogTop = () => {
           <a href='/day1'>Day 1</a>
         </Box>
 
-        <Box className={classes.container}>
+        {/* <Box className={classes.container}>
           <Box className={classes.tagContainer}>
             <Box className={classes.title}>Getting adjusted</Box>
           </Box>
@@ -97,7 +106,7 @@ const BlogTop = () => {
             </Box>
             <a href='/day3'>Day 3</a>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
 

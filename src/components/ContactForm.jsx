@@ -49,6 +49,7 @@ const ContactForm = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
+            <h1 style={{ marginLeft: '5vh' }}>Contact Me</h1>
             <form
               target="_blank"
               onSubmit={onSubmit}
