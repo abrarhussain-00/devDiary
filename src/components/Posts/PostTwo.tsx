@@ -30,10 +30,10 @@ const PostTwo = () => {
             <Box>
                 <br/><br/>
                 <Box>
-                    <Box className={classes.title}>Getting Asjusted</Box>
+                    <Box className={classes.title}>Getting Adjusted</Box>
                 </Box>
                 <Box>
-                    <Box className={classes.date}>05-21-23</Box>
+                    <Box className={classes.date}>05-23-23</Box>
                 </Box>
                 <Box className={classes.description}>
                     Day 2 ready

@@ -33,7 +33,7 @@ const PostThree = () => {
                     <Box className={classes.title}>Keeping my head up</Box>
                 </Box>
                 <Box>
-                    <Box className={classes.date}>05-22-23</Box>
+                    <Box className={classes.date}>05-24-23</Box>
                 </Box>
                 <Box className={classes.description}>
                     Day 3 ready

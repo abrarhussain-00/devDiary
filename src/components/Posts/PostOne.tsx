@@ -43,7 +43,7 @@ const PostOne = () => {
                     <Box className={classes.title}>My First Post!</Box>
                 </Box>
                 <Box>
-                    <Box className={classes.date}>05-21-23</Box>
+                    <Box className={classes.date}>05-22-23</Box>
                 </Box>
                 <Box className={classes.description}>
                     Hey everyone! Welcome to my first-ever blog post. I'm thrilled to embark on this journey of sharing my
