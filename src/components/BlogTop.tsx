@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'white',
     boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)',
     padding: '1.25rem',
-    borderRadius: '50px',
+    borderRadius: '8px',
     width: '100%',
     maxWidth: '352px',
     margin: 'auto',
@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
     padding: '0.375rem 0.75rem',
     display: 'inline-block',
     textAlign: 'left',
+    color: 'grey',
+    fontSize: '14px',
   },
   gridContainer: {
     display: 'grid',
@@ -71,7 +73,7 @@ const BlogTop = () => {
         />
       </div> */}
 
-      <hr style={{ width: '50%' }} />
+      {/* <hr style={{ width: '50%' }} /> */}
 
       <Box className={classes.gridContainer}>
         <Box className={classes.container}>
@@ -83,8 +85,8 @@ const BlogTop = () => {
             and be better applicants! I will be blogging everyday and if you dont see one up for a certain day, be sure to contact me to
             hold me accountable. Join me on my journey!
           </Box>
-          <div style={{ textAlign: 'center', marginTop:'7px' }}>
-            <a href='/day1'>Day 1</a>
+          <div style={{ textAlign: 'center', marginTop:'7px'}}>
+          <a href='/day1' style={{ textDecoration: 'none', color:'gray' }}>May 22</a>
           </div>
         </Box>
 
@@ -100,7 +102,7 @@ const BlogTop = () => {
             thanks for tuning in! And I'll see you tomorrow!
           </Box>
           <div style={{ textAlign: 'center', marginTop:'7px' }}>
-            <a href='/day2'>Day 2</a>
+          <a href='/day2' style={{ textDecoration: 'none', color:'gray' }}>May 23</a>
           </div>
         </Box>
 
@@ -115,7 +117,7 @@ const BlogTop = () => {
               thanks for tuning in! And I'll see you tomorrow!
             </Box>
             <div style={{ textAlign: 'center', marginTop:'7px' }}>
-              <a href='/day3'>Day 3</a>
+            <a href='/day3' style={{ textDecoration: 'none', color:'gray' }}>May 24</a>
             </div>
           </Box>
         </Box>

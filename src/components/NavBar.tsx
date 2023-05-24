@@ -31,7 +31,7 @@ const NavBar: React.FC = () => {
         alignItems: 'center',
         padding: '5px',
         color: 'white',
-        marginBottom: '7vh',
+        // marginBottom: '7vh',
         fontSize: '20px', 
         // width:'100%'
       }}
@@ -161,7 +161,7 @@ const NavBar: React.FC = () => {
                 Portfolio
               </a>
               
-              <SocialMediaIcons />
+              {/* <SocialMediaIcons /> */}
             </div>
           )
         ) : (
@@ -175,6 +175,8 @@ const NavBar: React.FC = () => {
                 fontWeight: '300',
                 fontFamily: 'Verdana',
                 fontSize: '14px',
+                marginTop:'20px'
+
 
               }}
               onMouseEnter={(e) => {
@@ -195,6 +197,8 @@ const NavBar: React.FC = () => {
                 fontWeight: '300',
                 fontFamily: 'Verdana',
                 fontSize: '14px',
+                marginTop:'20px'
+
 
 
               }}
@@ -216,6 +220,8 @@ const NavBar: React.FC = () => {
                 fontWeight: '300',
                 fontFamily: 'Verdana',
                 fontSize: '14px',
+                marginTop:'20px'
+
 
               }}
               onMouseEnter={(e) => {
@@ -236,6 +242,9 @@ const NavBar: React.FC = () => {
                 fontWeight: '300',
                 fontFamily: 'Verdana',
                 fontSize: '14px',
+                marginRight:'20px',
+                marginTop:'20px'
+
 
 
 
@@ -249,9 +258,9 @@ const NavBar: React.FC = () => {
             >
               Portfolio
             </a>
-            <div style={{marginRight:'20px'}}>
+            {/* <div style={{marginRight:'20px'}}>
               <SocialMediaIcons />
-            </div>
+            </div> */}
           </>
         )}
       </div>
