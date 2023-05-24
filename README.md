@@ -54,4 +54,6 @@ Contributions to this project are welcome. If you would like to contribute, plea
 
 ## Demo
 
+https://github.com/abrarhussain-00/devDiary/assets/117599985/13c84b76-e150-43e4-86d5-7889964e36f8
+
 ---
